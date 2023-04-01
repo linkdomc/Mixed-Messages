@@ -11,11 +11,12 @@
     var(--g1)
     );
     background-size: 200%;
-    color: black;
+    color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 30px;
 }
 body{
+    user-select:none;
     display: flex;
     position: absolute;
     justify-content: center;
@@ -26,20 +27,18 @@ body{
 }
 .contaner{
     background: rgb(0,0,0,24%);
-    color: white;
     text-align: center;
     animation: fade 5s infinite;
 }
-/*
-@keyframes fade{
-    0%  { opacity: 0;}
-    75% { opacity: 1;}
-    100% { opacity: 0;}
-}
-*/
+
 .contaner:active{
     background: rgb(0,0,0,24%);
     color: white;
     text-align: center;
-    animation-play-state: paused;
+}
+
+@keyframes fade{
+    0%  { opacity: 0;}
+    75% { opacity: 1;}
+    100% { opacity: 0;}
 }
